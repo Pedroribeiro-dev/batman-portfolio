@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+    background-color: black;
+}
+
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%; 
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+li{
+    color: white;
+    font-size: 19px;
+    font-family:'Kdam Thmor Pro', sans-serif;
+    list-style: none;
+    transition: 1s;
+}
+
+li:hover{
+    color: red ;
+}
+
+#logo{
+    width: 150px;
+    height: auto;
+}
+
+.banner1{
+    height: 600px;
+    width: 100%;
+    background-image: url('./the-batman-2022-movies-dc-comics-red-background-dc-2560x1080-6904.jpg');
+    background-position: 50% 5%;
+    background-size: cover;  
+}
+
+.video-container{ 
+    height: 400px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.video-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#trailer{
+    width: 50%;
+}
+
+.video-sinopse{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 30px; 
+}
+
+.descricao{
+    color: white;
+    font-size: 19px;
+    font-family:'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+    text-align: justify;
+}
+.botao{
+    color: white;
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family:'Kdam Thmor Pro', sans-serif ;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-left: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    align-items: center;
+    transition: 1s;
+}
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.container-atores {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.espaco-atores {
+    width: 90%; 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-right:40px ;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 20%;
+    border-radius: 5px;
+    cursor: pointer;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: white;
+    font-size: 17px;
+    font-family:'kdam thmor pro',sans-serif;
+    transition: 1s;   
+}
+.card:hover {
+    transform: scale(1.02);
+}
+
+.ator1 {
+    background-image: url('https://p2.trrsf.com/image/fget/cf/1200/1200/middle/images.terra.com/2022/03/19/2089482429-zoekravitz.jpg');
+}
+
+.ator2 {
+    background-image: url('https://res.cloudinary.com/buzzfeed-brasil/image/upload/q_auto,f_auto/image-uploads/subbuzz-images/jpeg/a02cd04873eeb27d176f96a359939d63.jpg');
+}
+
+.ator3 {
+    background-image: url('https://ogimg.infoglobo.com.br/in/22818531-da0-6dc/FT1086A/760/jeffrey-wright.JPG');
+}
+
+footer{
+    height: 300px;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo-footer{
+    width: 200px;
+    height: auto;
+}
+
+span {
+    color: white;
+    font-family:'kdam thmor pro',sans-serif ;
+}
+
+.footer-navigation{ 
+    display: none;
+}
+
+.footer-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media(max-width: 768px){
+
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .video-container{
+       width: 100%;
+       height: 400px;
+       display: flex;
+       flex-direction: column;
+       margin-top: 130px;
+    }  
+
+    .video-content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #trailer {
+        width: 100%;
+        margin-left: 35px;
+    }
+    
+    .video-sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .descricao{
+        width: 100%;
+    }
+    
+    .botao {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 2px;
+    }
+
+    .espaco-atores{
+        grid-template-columns: 1fr;
+        margin-top: 120px;
+        margin-right: 15px;
+    }
+
+}
+
+
